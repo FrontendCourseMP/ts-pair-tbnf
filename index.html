@@ -11,20 +11,25 @@
   <body>
     <main>
       <section>
-        <form action="">
+        <form id="form">
           <div class="form_wrapper">
-            <label for="input">
+            <label for="timeInput">
               Ввод
-              <input class="input" type="text" class="Input" />
+              <input id="timeInput" type="text" class="Input" />
+            </label>
+            <label for="timeInput_2">
+              Ввод пропуска
+              <input id="timeInput_2" type="text" class="Input" />
             </label>
             <button type="submit">Ввести</button>
           </div>
-        </form>
-        <label for="output">
+        </form id="form">
+        <label for="timeLate">
             Вывод
-            <input id="output" type="text" value=""  disabled/>
+            <input id="timeLate" type="text" value=""  disabled/>
         </label>
       </section>
+      <script src="dist/Main.js"></script>
     </main>
   </body>
 </html>
