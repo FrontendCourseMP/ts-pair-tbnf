@@ -1,0 +1,115 @@
+:root {
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    background-color: black;
+    font-family: 'Courier New', monospace; /* Моноширинный шрифт для минимализма */
+}
+
+section {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.form_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Стили для label */
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+/* Базовые стили для всех input */
+input {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Стиль для активного input */
+.input:focus {
+    outline: none;
+    border-color: #fff;
+    background-color: #111;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+/* Стиль для disabled input */
+#output {
+    background-color: #222;
+    color: #ccc;
+    border: 1px solid #666;
+    cursor: not-allowed;
+}
+
+/* Стили для кнопки */
+button {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    padding: 0.75rem 1.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Дополнительные минималистичные элементы */
+main {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Минимальная анимация при фокусе */
+input:not(#output):focus {
+    transform: translateY(-1px);
+}
+
+/* Состояние наведения для кнопки */
+button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    :root {
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    section {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+}
