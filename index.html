@@ -5,31 +5,33 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Веб разработка TBNF</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
-      <section>
-        <form id="form">
-          <div class="form_wrapper">
-            <label for="timeInput">
-              Ввод
-              <input id="timeInput" type="text" class="Input" />
-            </label>
-            <label for="timeInput_2">
-              Ввод пропуска
-              <input id="timeInput_2" type="text" class="Input" />
-            </label>
-            <button type="submit">Ввести</button>
-          </div>
-        </form id="form">
-        <label for="timeLate">
-            Вывод
-            <input id="timeLate" type="text" value=""  disabled/>
+      <form action="">
+        <label for="">
+          Введите строку(Строка должна содержать только скобочки (), [], {})
         </label>
-      </section>
+        <input type="text" name="vvod" id="formInput" />
+        <button id="formBtn">
+          Вывести результат
+        </button>
+        <label for=""> Вывод: </label>
+        <input type="text" name="vivod" id="formOutput" />
+      </form>
       <script src="dist/Main.js"></script>
     </main>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    </style>
   </body>
 </html>
