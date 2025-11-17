@@ -4,7 +4,7 @@
     padding-right: 10%;
     color: white;
     background-color: black;
-    font-family: 'Courier New', monospace; /* Моноширинный шрифт для минимализма */
+    font-family: 'Courier New', monospace;
 }
 
 section {
@@ -22,7 +22,6 @@ section {
     gap: 1rem;
 }
 
-/* Стили для label */
 label {
     display: flex;
     flex-direction: column;
@@ -33,7 +32,6 @@ label {
     font-size: 0.9rem;
 }
 
-/* Базовые стили для всех input */
 input {
     background-color: black;
     border: 1px solid white;
@@ -44,7 +42,6 @@ input {
     transition: all 0.3s ease;
 }
 
-/* Стиль для активного input */
 .input:focus {
     outline: none;
     border-color: #fff;
@@ -52,7 +49,6 @@ input {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
 }
 
-/* Стиль для disabled input */
 #output {
     background-color: #222;
     color: #ccc;
@@ -60,7 +56,6 @@ input {
     cursor: not-allowed;
 }
 
-/* Стили для кнопки */
 button {
     background-color: white;
     color: black;
@@ -84,23 +79,19 @@ button:active {
     transform: scale(0.98);
 }
 
-/* Дополнительные минималистичные элементы */
 main {
     max-width: 500px;
     margin: 0 auto;
 }
 
-/* Минимальная анимация при фокусе */
 input:not(#output):focus {
     transform: translateY(-1px);
 }
 
-/* Состояние наведения для кнопки */
 button:hover {
     background-color: #f0f0f0;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     :root {
         padding-top: 10%;
