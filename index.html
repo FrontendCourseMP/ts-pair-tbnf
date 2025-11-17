@@ -22,15 +22,77 @@
           Вывести результат
         </button>
         <label for=""> Вывод: </label>
-        <input type="text" name="vivod" id="formOutput" />
+        <input type="text" name="vivod" id="formOutput"  disabled/>
       </form>
       <script src="dist/Main.js"></script>
     </main>
     <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      main {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        width: 100%;
+      }
+
       form {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
+      }
+
+      label {
+        font-weight: bold;
+        color: #333;
+        font-size: 1rem;
+      }
+
+      input[type="text"] {
+        padding: 12px;
+        border: 2px solid #ddd;
+        border-radius: 6px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+      }
+
+      input[type="text"]:focus {
+        outline: none;
+        border-color: #667eea;
+      }
+
+      button {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+      }
+
+      button:active {
+        transform: translateY(0);
+      }
+
+      #formOutput {
+        background-color: #000000;
+        font-weight: bold;
       }
     </style>
   </body>
